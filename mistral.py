@@ -12,9 +12,9 @@ from serpapi import GoogleSearch
 from langchain.agents import create_react_agent
 
 import os
-os.environ['SERPAPI_API_KEY'] ="2f6cda02b12ababf9315904ec550440ab79c28fc4a467bc14e5ee98c258a88e4"
+os.environ['SERPAPI_API_KEY'] ="**************************************"
 
-os.environ['TAVILY_API_KEY'] ="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"
+os.environ['TAVILY_API_KEY'] ="tvly-***********************************"
 tavily_tool = TavilySearchResults()
 
 # Set up the LLM which will power our application.
@@ -36,7 +36,7 @@ def blog_search_tool(query: str):
     params = {
         "engine": "google",
         "q": query,
-        "api_key": "69cb7be0438a98e20f1353511fc1a512ffec7b8a210a098ff021667bc98c263e"
+        "api_key": "**********************************************"
     }
     search = GoogleSearch(params)
     results = search.get_dict()
